@@ -1,0 +1,42 @@
+/**
+ * Created by zhaozhixiong 
+ */
+@media screen and (max-width: 1920px){
+    html {
+        font-size: 16px;
+    }
+}
+/* 设计稿px转换rem函数 */
+@function pxRem($px) {
+    @return ($px / 46.875px) + rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+@font-face{
+  font-family:'AngkorRegular';
+  src:url('../assets/Angkor-Regular.ttf');
+}

@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 95px;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #354348;
+  z-index: 1000;
+  .logo {
+    float: left;
+  }
+  .icon {
+    float: left;
+    margin-left: 20px;
+    padding-top: 12px;
+    height: 50px;
+    border-left: 1px solid #354348;
+    a {
+      float: left;
+      height: 26px;
+      margin-left: 23px;
+    }
+  }
+  .twitter {
+    width: 26px;
+    background: url("../assets/images/icon.png") 0 0;
+  }
+  .reddit {
+    width: 26px;
+    background: url("../assets/images/icon.png") -44px 0;
+  }
+  .discord {
+    width: 32px;
+    background: url("../assets/images/icon.png") -88px 0;
+  }
+  .telegram {
+    width: 26px;
+    background: url("../assets/images/icon.png") -138px 0;
+  }
+  .menu {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    li {
+      font-size: 20px;
+      height: 100%;
+      font-weight: 700;
+      list-style: none;
+      color: #b9b9bb;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      span {
+        padding: 10px 0;
+      }
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+      }
+    }
+    li:hover {
+      background-image: linear-gradient(180deg, #f5e16d, #fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    li.active {
+      background-image: linear-gradient(180deg, #f5e16d, #fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      span {
+        background-position: center 40px;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+  .wallet {
+    width: 335px;
+    height: 78px;
+    background: url("../assets/images/wallet.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wallet-icon {
+      width: 50px;
+      height: 42px;
+      margin-right: 24px;
+    }
+    .un-connect {
+      img {
+        width: 180px;
+        height: 21px;
+      }
+    }
+    .has-connect{
+      p{
+        font-size: 22px;
+        color:white;
+        font-weight: bold;
+      }
+    }
+  }
+}

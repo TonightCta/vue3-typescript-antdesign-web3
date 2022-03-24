@@ -1,29 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <CpnHeader />
+    <div class="view-box" :class="app.transiname">
+      <router-view />
     </div>
-    <router-view/>
   </div>
 </template>
-
-<style lang="scss">
+<script lang="ts">
+import Vue from "vue";
+import { mapState } from "vuex";
+export default Vue.extend({
+  name: "HomeView",
+  components: {
+    CpnHeader: (resolve) => require(["@/components/cpn_header.vue"], resolve),
+  },
+  data() {
+    return {
+      info: 0,
+    };
+  },
+  computed: {
+    ...mapState(["app"]),
+  },
+});
+</script>
+<style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.default-trans {
+  transition: 0.3s;
+  // transform: scale(1) translateY(0);
+  padding-top: 0;
+  width: 100%;
+  opacity: 1;
+}
+.open-trans {
+  transition: 0.3s;
+  // transform: scale(0.9) translateY(20px);
+  width: 95%;
+  padding-top: 20px;
+  opacity: 0;
 }
 </style>

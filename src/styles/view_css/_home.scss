@@ -1,0 +1,45 @@
+.home-wapper {
+  padding-top: 136px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("../../assets/images//bg/home_bg.png");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 56px;
+  
+  .title-img{
+    img{
+      height: 72px;
+    }
+  }
+  .btn-oper {
+    margin-top: 30px;
+    button {
+      width: 271px;
+      height: 100px;
+      cursor: pointer;
+      font-size: 38px;
+      font-weight: bold;
+      color: white;
+      text-stroke: 2px #3b1d1b;
+      -webkit-text-stroke: 2px #3b1d1b;
+      font-family: Bubble;
+    }
+    .label {
+      display: inline-block;
+      width: 141px;
+    }
+    button:first-child {
+      background: url("../../assets/images/bg/home_btn_blue.png");
+      background-size: 100% 100%;
+    }
+    button:last-child {
+      background: url("../../assets/images/bg/home_btn_orange.png");
+      background-size: 100% 100%;
+    }
+  }
+}

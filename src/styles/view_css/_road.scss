@@ -1,0 +1,197 @@
+.road-map {
+  padding-top: 152px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background:url('../../assets/images/bg/road_map.png');
+  background-position: top;
+  background-size: cover;
+  .map-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    .map-tree {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex: 1;
+      overflow: auto;
+      max-height: 560px;
+      .tree-left {
+        padding-top: 56px;
+        .road-line {
+          right: -80px;
+          background: linear-gradient(to right, #bb7c3f, #d9ab3c);
+          .line-point {
+            right: -8px;
+          }
+        }
+        li:first-child {
+          position: relative;
+          .flower-box {
+            width: 85px;
+            height: 93px;
+            background: url("../../assets/images/road_flower.png");
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: 8px;
+            right: 20px;
+          }
+          .light-box {
+            position: absolute;
+            width: 105%;
+            height: 110%;
+            left: -2.8%;
+            top: -5%;
+            background: url("../../assets/images/road_light.png");
+            background-size: 100% 100%;
+          }
+        }
+        li:last-child {
+          min-height: 120px;
+          background: url("../../assets/images/bg/reward_bg_2.png");
+          background-size: 100% 100%;
+        }
+      }
+      .tree-right {
+        padding-top: 150px;
+        li {
+          .road-line {
+            left: -80px;
+            background: linear-gradient(to right, #d9ab3c, #bb7c3f);
+            .line-point {
+              left: -8px;
+            }
+          }
+        }
+        li:first-child {
+          .for-list {
+            width: 100% !important;
+            margin-bottom: 8px !important;
+            p {
+              white-space: normal !important;
+            }
+          }
+        }
+      }
+      .tree-left,
+      .tree-right {
+        ul {
+          li {
+            width: 450px;
+            background: url("../../assets/images/bg/reward_bg.png");
+            background-size: 100% 100%;
+            padding: 8px;
+            margin-bottom: 50px;
+            min-height: 200px;
+            position: relative;
+            .road-line {
+              position: absolute;
+              width: 100px;
+              height: 4px;
+              border-radius: 4px;
+              top: 1px;
+              // z-index: -1;
+              .line-point {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: #d6c97c;
+                top: 50%;
+                margin-top: -8px;
+              }
+            }
+            .road-title {
+              text-align: left;
+              font-size: 22px;
+              color: #fffbeb;
+              -webkit-text-stroke: 1px rgba(59, 29, 27, 1);
+              text-stroke: 1px rgba(59, 29, 27, 1);
+            }
+            .remark-box {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 16px;
+              .for-list {
+                display: flex;
+                width: 50%;
+                margin-bottom: 10px;
+                align-items: center;
+                p {
+                  text-align: left;
+                  font-size: 19px;
+                  color: #585046;
+                  white-space: nowrap;
+                }
+                .point {
+                  width: 8px;
+                  min-width: 8px;
+                  height: 8px;
+                  border: 2px solid #3a2726;
+                  display: inline-block;
+                  padding: 1px;
+                  transform: rotate(45deg);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 8px;
+                  .point-inner {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #3a2726;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .tree-line {
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .line {
+          width: 4px;
+          border-radius: 8px;
+          height: 125%;
+          background-color: rgba(245, 224, 105, 0.5);
+        }
+        .point-top {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: rgba(245, 224, 105, 1);
+          top: 0;
+          left: 50%;
+          margin-left: -12px;
+        }
+        .point-bottom {
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #d6c97c;
+          bottom: -25%;
+          left: 50%;
+          margin-left: -8px;
+        }
+      }
+    }
+    .map-remark {
+      font-size: 33px;
+      color: white;
+      text-align: left;
+      padding: 0 288px;
+      margin-top: 48px;
+    }
+  }
+}

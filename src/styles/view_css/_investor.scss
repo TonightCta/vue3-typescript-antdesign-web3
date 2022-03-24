@@ -1,0 +1,54 @@
+.investor-wapper {
+  padding-top: 152px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 72px;
+  background:url('../../assets/images/bg/investor_bg.png');
+  background-position: top;
+  background-size: cover;
+  .investor-title {
+    width: 1164px;
+    height: 110px;
+    background: url("../../assets/images/bg/inves_title.png");
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 200;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 50px;
+      color: #fffbeb;
+      -webkit-text-stroke: 2px #3b1d1b;
+      text-stroke: 2px #3b1d1b;
+    }
+  }
+  .company-list{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .label{
+      width: 5px;
+      height: 200px;
+      background-color: #aaa;
+      border-radius: 4px;
+      margin:0 62px;
+    }
+    img:first-child{
+      width: 565px;
+      height: 114px;
+    }
+    img:last-child{
+      width: 396px;
+      height: 235px;
+    }
+  }
+  .inves-remark {
+    font-size: 38px;
+    color: white;
+  }
+}
